@@ -4,10 +4,15 @@ Gruppmedlemmar:
 Yosef, Malin, Ali, Ilya
 
 Arbetsfördelning:
+
 index.html - görs tillsammans
+
 köp din bil sidan - Yosef
+
 Sälj din bil sidan - Malin
+
 Värdera din bil - Ilya
+
 Om oss/Kontakta oss - Ali
 
 Grafisk profil:
