@@ -22,6 +22,7 @@ Lyxigt, snabbt, sportigt, säkert
 Verksamhetsbeskrivning för FirstAuto
 
 Företagsnamn: FirstAuto
+
 Bransch: Bilförsäljning och bilhandel
 
 Översikt:
