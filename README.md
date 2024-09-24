@@ -1,5 +1,19 @@
 # firstauto
 
+Gruppmedlemmar:
+Yosef, Malin, Ali, Ilya
+
+Arbetsfördelning:
+index.html - görs tillsammans
+köp din bil sidan - Yosef
+Sälj din bil sidan - Malin
+Värdera din bil - Ilya
+Om oss/Kontakta oss - Ali
+
+Grafisk profil:
+Lyxigt, snabbt, sportigt, säkert
+
+
 Verksamhetsbeskrivning för FirstAuto
 
 Företagsnamn: FirstAuto
@@ -35,6 +49,3 @@ Kundfokus: Vi sätter alltid våra kunder först.
 Kvalitet: Vi erbjuder endast fordon av högsta kvalitet.
 Integritet: Vi arbetar ärligt och transparent i alla våra affärer.
 Innovation: Vi anpassar oss ständigt till marknadens förändringar och kundernas behov.
-
-
-
