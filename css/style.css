@@ -46,3 +46,26 @@ a:hover {
     font-size: 50px;
     font-family: monospace;
 }
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a:hover {
+    color: orange;
+}
