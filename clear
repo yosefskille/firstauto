@@ -1,0 +1,64 @@
+[33mcommit 0af899510eb53e409ef480c899dc0a617c229345[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhomepage[m[33m)[m
+Author: babaluuush <aalitaei@gmail.com>
+Date:   Thu Sep 26 12:05:13 2024 +0200
+
+    added styles.css file
+
+[33mcommit c0d15d9783f46d9b699e6639a59e1f85f6fb0917[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: babaluuush <aalitaei@gmail.com>
+Date:   Thu Sep 26 11:53:46 2024 +0200
+
+    new html file
+
+[33mcommit 9819fb3f668f01a0a7750ceead12ece2a2d33db5[m
+Merge: 4daa48b f3ce7df
+Author: yosefskille <yosef.business03@gmail.com>
+Date:   Thu Sep 26 11:42:57 2024 +0200
+
+    Merge branch 'main' of https://github.com/yosefskille/firstauto
+
+[33mcommit 4daa48b47173c32dc55e6a1ca1545c6391b6f27f[m
+Author: yosefskille <yosef.business03@gmail.com>
+Date:   Thu Sep 26 11:41:50 2024 +0200
+
+    created html file structure
+
+[33mcommit f3ce7dfb85302c190c7b94290aa8d48362b1b410[m
+Author: Malinbagewitzfungdal <malinfungdal@hotmail.com>
+Date:   Tue Sep 24 12:34:44 2024 +0200
+
+    Update README.md
+
+[33mcommit 67cb300317b46e0c7acc9d2eea268901149f5d74[m
+Author: Malinbagewitzfungdal <malinfungdal@hotmail.com>
+Date:   Tue Sep 24 12:31:29 2024 +0200
+
+    Update README.md
+
+[33mcommit fc46b030102dc145ddcaae3b177dc7f75cf14dbc[m
+Author: Ali T <149158762+babaluuush@users.noreply.github.com>
+Date:   Tue Sep 24 12:29:42 2024 +0200
+
+    Update README.md
+    
+    Uppdaterat gruppmedlemmar, arbetsfördelning osv.+
+
+[33mcommit a335963add68c3dc21300c3b7149581b2d69553e[m
+Author: yosefskille <yosef.business03@gmail.com>
+Date:   Tue Sep 24 12:28:45 2024 +0200
+
+    Update README.md
+
+[33mcommit 21708baa3eacaf33d1f41f78c556102014661c9a[m
+Author: Ali T <149158762+babaluuush@users.noreply.github.com>
+Date:   Tue Sep 24 12:16:39 2024 +0200
+
+    Update README.md
+    
+    Lagt till verksamhetsbeskrivning
+
+[33mcommit 634200ca6a3f7a05c70595971d005a3655a06091[m
+Author: yosefskille <yosef.business03@gmail.com>
+Date:   Tue Sep 24 12:01:17 2024 +0200
+
+    Initial commit
