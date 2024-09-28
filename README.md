@@ -18,6 +18,8 @@ Om oss/Kontakta oss - Ali
 Grafisk profil:
 Lyxigt, snabbt, sportigt, säkert
 
+En bilsajt med svart och orange färgschema kommer att kännas elegant, kraftfull och energisk. Det ger en känsla av både lyx och dynamik, samtidigt som det kan dra till sig uppmärksamhet och uppmuntra till handling. Detta passar bra för en bilförsäljningssajt som vill locka både premium- och prestandaintresserade kunder.
+
 
 Verksamhetsbeskrivning för FirstAuto
 

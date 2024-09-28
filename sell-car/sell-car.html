@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test-form</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+    <body>
+       
+       
+       
+       
+        <form action="" method="get" accept-charset="UTF-8" enctype="text/plain">
+            <label for="registreringsnummer"><span class="required"></span></label>
+            <input type="text" id="registreringsnummer" name="registreringsnummer" placeholder="registreringsnummer" required >
+
+            <label for="miltal"> miltal<span class="required"></span></label>
+            <select name="miltal" id="miltal" required>
+                <option value="0-5000">0-5000</option>
+                <option value="5000-15000">5000-15000</option>
+                <option value="15000-20000">15000-20000</option>
+                <option value="20000-35000">20000-35000</option>
+                <option value="35000<">35000<</option>
+            </select>
+
+            <label for="årsmodell"><span class="required"></span></label>
+            <input type="vol" id="årsmodell" name="årsmodell" min="1970" max="2024" placeholder="årsmodell" required>
+
+            <label for="fnamn"><span class="required"></span></label>
+            <input type="text" id="fnamn" name="fnamn" placeholder="förnamn" required>
+
+            <label for="enamn"><span class="required"></span></label>
+            <input type="text" id="enamn" name="enamn" placeholder="efternamn" required>
+            
+            <!--kanske behöver lägga till <pattern>-->
+            <label for="telnummer"><span class="required"></span></label>
+            <input type="tel" id="telnummer" name="telnummer" placeholder="telefonnummer" required>
+        
+            <label for="email"><span class="required"></span></label>
+            <input type="email" id="email" name="email" placeholder="email" required>
+        
+            <label for="info"><span class="required"></span></label>
+            <textarea name="info" id="info" rows="10" required>Finns det skador på bilen? Eller tillval som gjorts?</textarea>
+        
+            <div class="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Vill du ha nyhetsbrev från oss?</label>
+            </div>
+            
+            <input type="submit" value="skicka">
+
+        </form>
+    </body>
+</html>
