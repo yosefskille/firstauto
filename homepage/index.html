@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +8,60 @@
     <link rel="stylesheet" href="/css/test.css">
     <title>FirstAuto</title>
 </head>
+
 <body>
-    <div class="header">
-    <header class="firstauto">FirstAuto</header>
-    <h3 class="slogan">Kvalitet & Trygghet - Bilköp Utan Bekymmer!</h3>
-</div>
 
-<nav class="navbar">
-    <ul>
-        <li><a href="home.html">Hem</a></li>
-        <li><a href="buy-car.html">Köp</a></li>
-        <li><a href="sell-car.html">Sälj</a></li>
-        <li><a href="value-car.html">Värdera</a></li>
-        <li><a href="about-us.html">Om oss</a></li>
-    </ul>
-</nav>
+    <div id="grid-container">
+        <header>
+            <div class="dropdown">
+                <div class="menu-icon">
+                    <!-- Hamburger ikon -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="dropdown-content">
+                    <a href="../buy-car/buy-car.html">Köp</a>
+                    <a href="../sell-car/sell-car.html">Sälj</a>
+                    <a href="../value-car/value-car.html">Värdera</a>
+                    <a href="../about-us/about-us.html">Om oss</a>
+                </div>
+            </div>
+        </header>
 
-<div class="buy-sell">
-    <h1><a href="buy-car.html" target="_blank">Köp din bil</a></h1>
-    <h1><a href="sell-car.html" target="_blank">Sälj din bil</a></h1>
-</div>
+        <div class="main">
+            <h1 class="firstauto">FirstAuto</h1>
+            <h3 class="slogan">Kvalitet & Trygghet <br>Bilköp Utan Bekymmer!</h3>
+        </div>
 
+        <div class="buy-sell">
+            <h1><a href="/buy-car/buy-car.html" target="_blank">Köp din bil</a></h1>
+            <h1><a href="/sell-car/sell-car.html" target="_blank">Sälj din bil</a></h1>
+        </div>
+
+
+        <footer>
+                <div class="about-us">
+                    <p>FirstAuto är din pålitliga partner för köp och försäljning av bilar. <br>Vi erbjuder högkvalitativa fordon och skräddarsydda finansieringslösningar. Vårt dedikerade team hjälper dig att göra ditt bilköp enkelt och tryggt.<br><br>Välj FirstAuto för en positiv köpupplevelse!</p>
+
+
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="../img/icons/Facebook_Logo_Primary.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="../img/icons/Instagram_Glyph_Gradient.png" alt="Instagram">
+                    </a>
+                </div>
+                <div class="contact">
+                    <p>Kontakta Oss</p>
+                    <p>Telefonnummer: +467549283928</p>
+                    <p>E-post: firstauto@gmail.com</p>
+                    <p>Adress: <a href="https://maps.app.goo.gl/1xdJwEDG1UYynAqk9" target="_blank">Isafjordsgatan 30A, 164 40 Kista</a></p>
+                </div>
+        </footer>
+    </div>
 </body>
+
 </html>
