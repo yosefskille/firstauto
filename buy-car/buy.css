@@ -82,22 +82,44 @@ body {
 .car-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 26px;
     margin: 20px auto;
     max-width: 900px;
+
 }
 
 .car-box {
     background-color: white;
     color: black;
     text-align: center;
+    display: inline-block;
+    width: auto;
+    height: auto;    
+    max-width: 100%;
+    max-height: 100%;
+    
+   position: relative;
+ 
+}
+.car-box img {
+    object-fit:fill;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-   position: relative;
-
 }
 
+.car-box img {
+    border-radius: 10px; /* Add a 10px radius to the image corners */
+  }
+  .car-box {
+    border-radius: 10px; /* Add a 10px radius to the box corners */
+  }
+  .car-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow to the box */
+  }
+
+  .car-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow to the box */
+  }
 .car-info {
 
     position: absolute;
@@ -115,7 +137,8 @@ body {
 
 .car-info p {
     display: inline-block;
-    margin-right: 50px;
+    margin-right: 15px;
+    
 }
 
 
@@ -130,45 +153,57 @@ display: block;
 
 
 footer {
+    display: flex;
     background-color: #2d2d2d;
     padding: 20px;
     text-align: center;
-}
-
-.footer-content {
-    display: flex;
+    grid-column: 1 / 13;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .about-us, .social, .contact {
     margin: 10px;
 }
 
-.footer-content p {
-    margin: 5px 0;
-    color: white;
-    font-size: 14px;
+.about-us {
+    width: 33%;
+    color: rgb(139, 136, 136);
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: monospace;
+
+}
+
+.social {
+    color: rgb(139, 136, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 20px;
+
+}   
+
+.social a {
+    margin: 0 10px;
+}
+
+.social img {
+    width: 40px;
+    height: auto;
+}
+
+.contact {
+    width: 33%;
+    color: rgb(139, 136, 136);
+    line-height: 1.5;
+    font-family: monospace;
+    font-size: 16px;
+
+
 }
 
 
-@media (max-width: 767px) {
-    .header {
-        font-size: 30px; /* reduce font size further */
-    }
-    .search-container {
-        flex-direction: column; /* stack search box and button vertically */
-    }
-    .search-box {
-        width: 100%; /* make search box full-width */
-    }
-    .car-images {
-        grid-template-columns: 1fr; /* single column layout */
-    }
-    .car-box {
-        width: 100%; /* make car box full-width */
-    }
-    .footer-content {
-        flex-direction: column; /* stack footer content vertically */
-    }
-}
+
+
+
