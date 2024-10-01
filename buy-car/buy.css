@@ -14,12 +14,14 @@ body {
 .firstauto {
     font-size: 50px;
     color: chocolate;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .slogan {
     font-size: 18px;
     color: white;
-    margin-top: -15px;
+    margin-top: -10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navbar {
@@ -89,10 +91,43 @@ body {
     background-color: white;
     color: black;
     text-align: center;
-    padding: 20px;
-    height: 150px;
-    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   position: relative;
+
 }
+
+.car-info {
+
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.664);
+    color:rgb(244, 241, 240);
+    display: none;
+    width: 100%;
+    height: 60%;
+    
+    
+}
+
+.car-info p {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+
+
+.car-box:hover .car-info {
+
+display: block;
+
+ 
+
+}
+
 
 footer {
     background-color: #2d2d2d;
@@ -114,4 +149,26 @@ footer {
     margin: 5px 0;
     color: white;
     font-size: 14px;
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        font-size: 30px; /* reduce font size further */
+    }
+    .search-container {
+        flex-direction: column; /* stack search box and button vertically */
+    }
+    .search-box {
+        width: 100%; /* make search box full-width */
+    }
+    .car-images {
+        grid-template-columns: 1fr; /* single column layout */
+    }
+    .car-box {
+        width: 100%; /* make car box full-width */
+    }
+    .footer-content {
+        flex-direction: column; /* stack footer content vertically */
+    }
 }
