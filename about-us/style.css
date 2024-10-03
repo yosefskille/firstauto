@@ -9,19 +9,17 @@ body {
 
 #grid-container {
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: repeat(12, 1fr);
-    margin: 0px auto;
+    margin: 0 auto;
     width: 100%;
 }
 
 .main {
     grid-column: 3 / 11;
     text-align: center;
-    font-size: 50px;
+    font-size: 20px;
     font-family: monospace;
-    margin-top: 85px;
-    margin-bottom: 50px;
+    margin: 10px;
 }
 
 .firstauto {
@@ -37,34 +35,6 @@ h1 {
     margin-top: 20px;
 }
 
-.buy-sell {
-    text-align: center;
-    color: white;
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-    align-items: center;
-    grid-column: 3 / 11;
-    margin-bottom: 232px;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(153, 150, 150);
-}
-
-a:hover {
-    text-decoration: underline;
-    color: rgb(255, 149, 0);
-    transition: 0.3s;
-}
-
-.buy-sell h1 {
-    font-size: 50px;
-    font-family: monospace;
-    text-transform: uppercase;
-}
-
 .dropdown {
     position: relative;
     display: inline-block;
@@ -77,8 +47,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px 20px 0 0;
 }
 
 .menu-icon div {
@@ -126,30 +95,65 @@ a:hover {
 
 header {
     grid-column: 12 / 13;
-    margin-right: 20px;
-    margin-top: 20px;
+    margin: 20px;
     position: relative;
+}
+
+.om-oss {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2 / 12;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 58px 0 65px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
+    color: #E0E0E0;
+}
+
+.overall, .mission, .info {
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 15px;
+    margin: 15px;
+}
+
+.overall {
+    grid-column: 1 / 5;
+}
+
+.mission {
+    grid-column: 5 / 9;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.info {
+    grid-column: 9 / 13;
+}
+
+footer, .om-oss {
+    background-color: #2d2d2d;
 }
 
 footer {
     display: flex;
-    background-color: #2d2d2d;
     text-align: center;
-    grid-column: 1 / 13;
     justify-content: space-around;
+    grid-column: 1 / -1;
+    margin-top: 58px;
 }
 
-.about-us, .social, .contact {
-    margin: 10px;
-}
-
-.about-us {
+.about-us, .contact {
     width: 33%;
     color: rgb(139, 136, 136);
     font-size: 16px;
     line-height: 1.5;
     font-family: monospace;
+    margin: 10px;
+}
 
+.contact {
+    line-height: 2.5;
 }
 
 .social {
@@ -159,8 +163,7 @@ footer {
     align-items: center;
     margin-top: 20px;
     gap: 20px;
-
-}   
+}
 
 .social a {
     margin: 0 10px;
@@ -171,12 +174,14 @@ footer {
     height: auto;
 }
 
-.contact {
-    width: 33%;
-    color: rgb(139, 136, 136);
-    line-height: 2.5;
-    font-family: monospace;
-    font-size: 16px;
+.contact a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact a:hover {
+    color: rgb(255, 149, 0);
+    transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -189,14 +194,16 @@ footer {
     .om-oss, .main, .overall, .mission, .info {
         grid-column: 1 / 13;
     }
-
-    .main {
-        font-size: 30px;
+    .mission {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
     }
+}
 
-    .buy-sell {
-        gap: 75px;
-        grid-column: 4 / 12;
-        margin-top: 59px;
+@media (min-width: 1200px) {
+    .om-oss {
+        margin-top: 99px;
     }
 }
