@@ -7,7 +7,13 @@ body {
     padding: 0;
 }
 
+.bilden {
 
+    max-width: 7cm;
+    border-radius: 20%;
+    
+ 
+}
 
 .main {
     grid-column: 3 / 11;
@@ -92,21 +98,23 @@ header {
     grid-column: 12 / 13;
     margin: 20px;
     position: absolute;
-    right: 50px;
+    right: 1px;
 }
 
 
 .search-container {
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 60px ;
 }
 
 .search-box {
+  
     padding: 10px;
     width: 200px;
     border-radius: 5px;
     border: none;
+    
 }
 
 .search-btn {
@@ -116,6 +124,7 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 .search-btn:hover {
@@ -124,15 +133,16 @@ header {
 
 .car-images {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 26px;
     margin: 20px auto;
-    max-width: 900px;
-
+    max-width: 1100px;
+    margin-bottom: 150px;
 }
 
-.car-box {
-    background-color: white;
+.car-box { 
+    position: relative;
+    background-color: gray;
     color: black;
     text-align: center;
     display: inline-block;
@@ -140,60 +150,68 @@ header {
     height: auto;    
     max-width: 100%;
     max-height: 100%;
-    
-   position: relative;
+    border-radius: 20px;
+   padding: 5px;
  
 }
 .car-box img {
     object-fit:fill;
     width: 100%;
+    border-radius: 20px; 
     height: 100%;
 }
 
-.car-box img {
-    border-radius: 10px; /* Add a 10px radius to the image corners */
-  }
-  .car-box {
-    border-radius: 10px; /* Add a 10px radius to the box corners */
-  }
-  .car-box {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow to the box */
-  }
 
-  .car-box {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a soft shadow to the box */
-  }
+
+  
 .car-info {
 
-    position: absolute;
+    position:absolute;
     bottom:0;
     left: 0;
     width: 100%;
-    background-color:rgba(0, 0, 0, 0.664);
-    color:rgb(244, 241, 240);
+    background-color:rgba(18, 18, 19, 0.683);
+    color:rgb(181, 174, 171);
     display: none;
     width: 100%;
-    height: 60%;
+    height: 35%;
+    border-radius: 19px;
     
-    
+border-top-left-radius: 1px;
+border-top-right-radius: 1px;
+}
+/* tyckte det var snyggare med texterna på varann */
+
+
+
+
+.car-box:hover .car-info{
+    display:block;
 }
 
-.car-info p {
-    display: inline-block;
-    margin-right: 15px;
+
+    
+
+.snart {
+
+text-align: center;
+background-color: #ff99002e;
+padding: 30px;
+border-radius: 40px;
+max-width:fit-content;
+margin:0 auto;
+margin-bottom: 2cm;
+font-style: oblique;
+margin-top: -3cm;
+transition:  transform 3.3s;
+
+}
+
+.snart:hover {
+    background-color: white;
+    transform: scale(1.5); 
     
 }
-
-
-
-.car-box:hover .car-info {
-
-display: block;
-
- 
-
-}
-
 
 footer {
     display: flex;
@@ -239,7 +257,7 @@ footer {
 .contact {
     width: 33%;
     color: rgb(139, 136, 136);
-    line-height: 1.5;
+    line-height: 3;
     font-family: monospace;
     font-size: 16px;
 
