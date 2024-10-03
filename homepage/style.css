@@ -1,10 +1,25 @@
 body {
     background: linear-gradient(135deg, #343434, #414141);
+    background-image: url('../img/vs11.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -5;
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
 }
 
 #grid-container {
@@ -13,6 +28,8 @@ body {
     grid-template-columns: repeat(12, 1fr);
     margin: 0px auto;
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
 
 .main {
@@ -198,5 +215,21 @@ footer {
         gap: 75px;
         grid-column: 4 / 12;
         margin-top: 59px;
+        margin-left: 50px;
+    }
+
+    body {
+        background: linear-gradient(135deg, #343434, #414141);
+        background-image: none;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
     }
 }
