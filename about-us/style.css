@@ -19,8 +19,7 @@ body {
     text-align: center;
     font-size: 20px;
     font-family: monospace;
-    grid-row-start: 1;
-    margin: 30px;
+    margin: 10px;
 }
 
 .firstauto {
@@ -48,7 +47,7 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 20px 20px 0 0; /* Sammanfört margin */
+    margin: 20px 20px 0 0;
 }
 
 .menu-icon div {
@@ -106,15 +105,12 @@ header {
     grid-column: 2 / 12;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    margin: 45px 0 58px;
+    margin: 58px 0 65px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-    background-color: #2d2d2d;
     color: #E0E0E0;
 }
 
-.overall,
-.mission,
-.info {
+.overall, .mission, .info {
     font-size: 20px;
     line-height: 1.5;
     padding: 15px;
@@ -135,12 +131,16 @@ header {
     grid-column: 9 / 13;
 }
 
+footer, .om-oss {
+    background-color: #2d2d2d;
+}
+
 footer {
     display: flex;
-    background-color: #2d2d2d;
     text-align: center;
     justify-content: space-around;
     grid-column: 1 / -1;
+    margin-top: 58px;
 }
 
 .about-us, .contact {
@@ -185,87 +185,25 @@ footer {
 }
 
 @media (max-width: 768px) {
-    footer  {
-        display: flex;
-        background-color: #2d2d2d;
-        grid-column: 1 / -1;
+    footer {
         flex-direction: column;
-        text-align: center;
-        }
-        
-        .about-us, .contact {
-        color: rgb(139, 136, 136);
-        font-size: 16px;
-        line-height: 1.5;
-        font-family: monospace;
-        margin: 10px;
-        width: auto;
-        }
-        
-        .social {
-        color: rgb(139, 136, 136);
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-        gap: 20px;
-        }
-
-        .social a {
-            margin: 0 10px;
-        }
-        
-        
-        .contact {
-        line-height: 2.5;
-        }
-        
-        
-        .om-oss {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-column: 1 / 13;
-        border: 2px solid white;
-        border-radius: 10px;
-        margin: 45px 0 50px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
-        background-color: #2d2d2d;
-        color: #E0E0E0;
-        }
-
-        .main {
-            grid-column: 1 / 13;
-            grid-row-start: 2;
-        }
-
-        .firstauto {
-            text-align: center;
-        }
-
-        .overall {
-            grid-column: 1 / 13;
-        }
-
-        .mission {
-            grid-column: 1 / 13;
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
-            border-left: none;
-            border-right: none;
-        }
-
-        .info {
-            grid-column: 1 / 13;
-        }
-
     }
+    .about-us, .contact {
+        width: auto;
+    }
+    .om-oss, .main, .overall, .mission, .info {
+        grid-column: 1 / 13;
+    }
+    .mission {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+}
 
-    @media (min-width: 1200px) {
-        footer {
-        margin-top: 58px;
-        }
-
-        .om-oss {
-            margin-top: 99px;
-        }
-
-        }
+@media (min-width: 1200px) {
+    .om-oss {
+        margin-top: 99px;
+    }
+}
