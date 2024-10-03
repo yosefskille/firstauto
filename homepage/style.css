@@ -1,18 +1,5 @@
 body {
-    background-color: #343434;
-    animation: backgroundFade 10s ease-in-out infinite;
-}
-
-@keyframes backgroundFade {
-    0% {
-        background-color: #343434;
-    }
-    50% {
-        background-color: #414141;
-    }
-    100% {
-        background-color: #343434;
-    }
+    background: linear-gradient(135deg, #343434, #414141);
 }
 
 * {
@@ -33,7 +20,7 @@ body {
     text-align: center;
     font-size: 50px;
     font-family: monospace;
-    margin-top: 55px;
+    margin-top: 85px;
     margin-bottom: 50px;
 }
 
@@ -58,7 +45,7 @@ h1 {
     justify-content: center;
     align-items: center;
     grid-column: 3 / 11;
-    margin-bottom: 262px;
+    margin-bottom: 232px;
 }
 
 a {
@@ -147,7 +134,6 @@ header {
 footer {
     display: flex;
     background-color: #2d2d2d;
-    padding: 20px;
     text-align: center;
     grid-column: 1 / 13;
     justify-content: space-around;
