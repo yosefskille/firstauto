@@ -158,7 +158,7 @@ footer {
 .about-us {
     width: 33%;
     color: rgb(139, 136, 136);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 2;
     margin: 10px;
 }
@@ -188,7 +188,6 @@ footer {
     line-height: 2.5;
     font-size: 16px;
     margin: 10px;
-    line-height: 2.5;
 }
 
 .contact a {
@@ -202,7 +201,7 @@ footer {
 }
 
 .buy-text-small, .sell-text-small {
-    display: none; /* Döljer de korta versionerna som standard */
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -278,7 +277,5 @@ footer {
         line-height: 4;
     }
 
-    .about-us {
-        line-height: 3;
-    }
+
 }
