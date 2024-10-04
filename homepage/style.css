@@ -270,6 +270,15 @@ footer {
         gap: 94px;
         grid-column: 3 / 12;
     }
+}
 
-    
+
+@media (min-width: 1440px) {
+    .contact {
+        line-height: 4;
+    }
+
+    .about-us {
+        line-height: 3;
+    }
 }
