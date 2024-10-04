@@ -4,7 +4,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: -5;
 }
 
 * {
@@ -13,7 +12,7 @@ body {
 }
 
 .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -154,6 +153,7 @@ footer {
     text-align: center;
     grid-column: 1 / 13;
     justify-content: space-around;
+    margin-top: 90px;
 }
 
 .about-us, .social, .contact {
@@ -199,6 +199,7 @@ footer {
 @media (max-width: 768px) {
     footer {
         flex-direction: column;
+        margin-top: 160px;
     }
     .about-us, .contact {
         width: auto;
@@ -235,11 +236,4 @@ footer {
         background-color: rgba(0, 0, 0, 0.7);
         z-index: -1;
     }
-}
-
-@media (max-width: 400px) {
-
-    .overlay {height: 250%;
-    }
-
 }
