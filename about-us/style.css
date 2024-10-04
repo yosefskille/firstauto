@@ -97,6 +97,7 @@ h1 {
 header {
     grid-column: 12 / 13;
     margin: 20px;
+    margin-right: 20px;
     position: relative;
 }
 
@@ -106,7 +107,7 @@ header {
     grid-column: 2 / 12;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 10px;
-    margin: 400px 0 100px;
+    margin: 100px 0 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
     color: #E0E0E0;
 }
