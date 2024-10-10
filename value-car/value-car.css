@@ -1,0 +1,224 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343434;
+    color: goldenrod;
+}
+
+.highlight {
+ 
+    color: orangered; 
+    padding: 5px; 
+    border-radius: 5px; 
+    display: inline-block; 
+    display: inline-block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    height: 100vh;
+}
+
+
+header {
+    grid-area: header;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration: underline, orangered;
+    
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+    color: rgb(255, 149, 0);
+    transition-duration: 0.5s;
+}
+
+
+main {
+    grid-area: main;
+    padding: 20px;
+    text-align: center;
+}
+
+.firstauto {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    color: goldenrod;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+
+#text-form {
+    margin: 20px auto;
+    max-width: 350px;
+    text-align: left;
+}
+
+.input-grupp {
+    display: grid;
+    gap: 10px;
+}
+
+.input-grupp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color:orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 106%;
+    
+
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    margin-top: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.about-us p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 10px;
+}
+
+.social a img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.contact p {
+    margin: 5px 0;
+    color: white;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: none;
+    
+}
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+    }
+    .about-us, .contact {
+        width: auto;
+        
+    }
+    .om-oss, .main, .overall, .mission, .info {
+        grid-column: 1 / 13;
+    }
+    .mission {
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .om-oss {
+        margin-top: 99px;
+    }
+}
